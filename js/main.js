@@ -7,7 +7,7 @@ var year =1989
 var month = 12
 var day = 7
 var gender = "m"
-var 
+var DayOfTheWeek = Math.round( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ), mod 7
 
 
 
@@ -18,19 +18,9 @@ function calculateNameAndDay (century,year,month,day)
     var dayTheUserWasBorn = DAYS_OF_THE_WEEK[indexOfTheDay];
     var name = null
 
-    if (gender ==='m'){
-        name =maleNames[indexOfTheDay]
-
-    } else if (gender ==='f')
-             name =femaleNames[indexOfTheDay]
- alert
-
-
-
-
 
  if( document.myForm.year.value == "" || document.myForm.year.value.length !=4 || document.myForm.year.value >2100 || document.myForm.year.value <=1900) {
-    alert( "Please provide a valid year of birth! eg 2019" );
+    alert( "Please provide a valid year of birth! eg 2022" );
     document.myForm.year.focus() ;
     return false;
  }
@@ -41,7 +31,7 @@ function calculateNameAndDay (century,year,month,day)
     return false;
  }
  else if( document.myForm.date.value == "" || isNaN( document.myForm.month.value ) || 
- document.myForm.month.value.length != 2|| document.myForm.date.value > 31 || document.myForm.date.value <= 0) {
+ document.myForm.month.value.length != 1|| document.myForm.date.value > 31 || document.myForm.date.value <= 0) {
     alert( "Please provide a valid date that you were born in!" );
     document.myForm.day.focus() ;
     return false;
