@@ -17,8 +17,7 @@ https://maureenmbithe/github.io/Week-2-Project~
 Run with Live server
 
 ### Installation / Setup instruction
-git clone https://github.com/maureenmbithe/Week-2-Proje
-git
+git clone https://github.com/maureenmbithe/Week-2-Project.git
 
 code . or atom . based on the text editor you have.
 Open the cloned code on VS code
