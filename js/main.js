@@ -42,9 +42,6 @@ function calculateNameAndDay (century,year,month,day)
  }   
  else{
    return true ;
- }
-
-}
 function calculateDayValue(){
  year = document.getElementById("year").value;
  CC = parseInt(year.substring(0,2));
