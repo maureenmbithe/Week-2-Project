@@ -12,11 +12,11 @@ var indexOfTheDay= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1
 
 
 function calculateNameAndDay (century,year,month,day)
-    var indexOfTheDay = Math.round( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ), mod 7
+    var indexOfTheDay = Math.round( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ), mod 7
 
     var dayTheUserWasBorn = Math.round ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ), mod 7
     var dayTheUserWasBorn = DAYS_OF_THE_WEEK[indexOfTheDay];
-    var name = null
+    var name = nhull
 
 
  if( document.myForm.year.value == "" || document.myForm.year.value.length !=4 || document.myForm.year.value >2100 || document.myForm.year.value <=1900) {
