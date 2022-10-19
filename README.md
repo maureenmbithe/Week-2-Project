@@ -13,7 +13,7 @@ born and then depending on their gender outputs,their
 Akan Name.
 
 ### LiveLink
-https://maureenmbithe/github.io/Week-2-Project~
+https://maureenmbithe.github.io/Week-2-Project~
 Run with Live server
 
 ### Installation / Setup instruction
