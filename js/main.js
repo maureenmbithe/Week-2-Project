@@ -7,23 +7,22 @@ var year =1989
 var month = 12
 var day = 7
 var gender = "m"
-var indexOfTheDay= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ), % 7;
+var indexOfTheDay= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7;
 
 
 
 function calculateNameAndDay (century,year,month,day)
-    var indexOfTheDay = Math.round( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ), mod 7
+    var indexOfTheDay = Math.round( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7
 
-    var dayTheUserWasBorn = Math.round ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ), mod 7
+    var dayTheUserWasBorn = Math.round ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7
     var dayTheUserWasBorn = DAYS_OF_THE_WEEK[indexOfTheDay];
     var name = null
 function main(){
-    var userinputYear = parseInt{prompt{"Enter the year"}};
-    var userinputMonth = parseInt{prompt{"Enter the month"}};
-    var userinputDay = parseInt{prompt{"Enter the day"}};
-    var userinputGender = parseInt{prompt{"Enter the gender"}};
-    var userinputCentury= parseInt{prompt{"userInputYear.toString ().substring(0 , 2)"}};
-  }
+    var userinputYear = parseInt(prompt("Enter the year"));
+    var userinputMonth = parseInt(prompt("Enter the month"));
+    var userinputDay = parseInt(prompt("Enter the day"))
+    var userinputGender = parseInt(prompt("Enter the gender"));
+    var userinputCentury= parseInt(prompt("userInputYear.toString ().substring(0 , 2)"));
 
  if( document.myForm.year.value == "" || document.myForm.year.value.length !=4 || document.myForm.year.value >2100 || document.myForm.year.value <=1900) {
     alert( "Please provide a valid year of birth! eg 2022" );
