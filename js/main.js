@@ -11,12 +11,13 @@ var indexOfTheDay= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1
 
 
 
-function calculateNameAndDay (century,year,month,day)
+function calculateNameAndDay (century,year,month,day){
     var indexOfTheDay = Math.round( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7
 
     var dayTheUserWasBorn = Math.round ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7
     var dayTheUserWasBorn = DAYS_OF_THE_WEEK[indexOfTheDay];
     var name = null
+}
 function main(){
     var userinputYear = parseInt(prompt("Enter the year"));
     var userinputMonth = parseInt(prompt("Enter the month"));
